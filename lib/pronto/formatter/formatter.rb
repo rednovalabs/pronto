@@ -11,18 +11,19 @@ module Pronto
     end
 
     FORMATTERS = {
-      'github' => GithubFormatter,
-      'github_status' => GithubStatusFormatter,
-      'github_pr' => GithubPullRequestFormatter,
-      'github_pr_review' => GithubPullRequestReviewFormatter,
-      'gitlab' => GitlabFormatter,
       'bitbucket' => BitbucketFormatter,
       'bitbucket_pr' => BitbucketPullRequestFormatter,
       'bitbucket_server_pr' => BitbucketServerPullRequestFormatter,
-      'json' => JsonFormatter,
+      'codeclimate' => CodeclimateFormatter,
       'checkstyle' => CheckstyleFormatter,
+      'github' => GithubFormatter,
+      'github_pr' => GithubPullRequestFormatter,
+      'github_pr_review' => GithubPullRequestReviewFormatter,
+      'github_status' => GithubStatusFormatter,
+      'gitlab' => GitlabFormatter,
+      'json' => JsonFormatter,
+      'null' => NullFormatter,
       'text' => TextFormatter,
-      'null' => NullFormatter
     }.freeze
   end
 end
